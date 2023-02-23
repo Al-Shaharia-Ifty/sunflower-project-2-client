@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Capture This",
+    "img": "https://i.ibb.co/WGd7Qkn/capture-This.jpg",
+    "rating": "4",
+    "details": "pecializes in wedding photography and videography, offering packages that include pre-wedding photoshoots, full-day coverage, and post-production editing."
+  },
+  {
+    "name": "Flash Photo",
+    "img": "https://i.ibb.co/b3WKxKq/flash-photo.png",
+    "rating": "4",
+    "details": "offers portrait photography services for families, children, and individuals, as well as corporate headshots, product photography, and event photography."
+  },
+  {
+    "name": "Focal Point",
+    "img": "https://i.ibb.co/W0hCZxF/focalpoint.jpg",
+    "rating": "4",
+    "details": "specializes in candid, natural photography for weddings, events, and lifestyle shoots, with a focus on capturing real moments and emotions."
+  },
+  {
+    "name": "Frame by Frame",
+    "img": "https://i.ibb.co/hVnQQ5V/frame-by-frame.jpg",
+    "rating": "4",
+    "details": "provides architectural and real estate photography services, with a focus on capturing the unique features and details of each property."
+  },
+  {
+    "name": "Freeze Frame",
+    "img": "https://i.ibb.co/WBRjzGz/freeze-frame.jpg",
+    "rating": "4",
+    "details": "offers a range of photography services, including portrait, event, and product photography, as well as photo editing and retouching."
+  },
+  {
+    "name": "Picture Perfect",
+    "img": "https://i.ibb.co/sPYt9QD/picture-Perfect.jpg",
+    "rating": "4",
+    "details": "provides a full range of photography services, including portrait, event, wedding, and commercial photography, with a team of experienced photographers and state-of-the-art equipment."
+  }
+]
