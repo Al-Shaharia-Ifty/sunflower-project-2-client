@@ -1,9 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
-import ServiceCart from "../Components/ServiceCart";
+import { Link } from "react-router-dom";
 import Loading from "../Shared/Loading";
+import ServiceCart from "./ServiceCart";
 
-const Services = () => {
+const HomeService = () => {
   const { data: allPhotos, isLoading } = useQuery({
     queryKey: ["allPhotos"],
     queryFn: () =>
@@ -19,17 +20,19 @@ const Services = () => {
     return <Loading />;
   }
   return (
-    <div>
-      <div className="bg-[#000000] h-[80px]"></div>
-      <div className="bg-[#000000] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-20 px-10 lg:px-20">
-        {allPhotos.map((p, i) => (
+    <div className="bg-[#000000]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-20 px-10 lg:px-20 2xl:px-60">
+        {allPhotos.slice(-3).map((p, i) => (
           <div key={i} className="bg-[#17171A] rounded-lg p-5">
             <ServiceCart info={p} />
           </div>
         ))}
       </div>
+      <Link to="/services" className="flex justify-center py-10">
+        <button className="btn bg-[#17171A]">See All Services</button>
+      </Link>
     </div>
   );
 };
 
-export default Services;
+export default HomeService;

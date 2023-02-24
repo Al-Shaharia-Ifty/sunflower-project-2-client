@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 function App() {
+  document.addEventListener("contextmenu", (event) => event.preventDefault());
   //useEffect
   useEffect(() => {
     AOS.init();
