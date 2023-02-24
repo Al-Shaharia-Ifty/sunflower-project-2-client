@@ -1,48 +1,48 @@
-import React, { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 import {
-  useSignInWithEmailAndPassword,
+  useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
+  useUpdateProfile,
 } from "react-firebase-hooks/auth";
+import { useForm } from "react-hook-form";
+import { useLocation, useNavigate } from "react-router-dom";
 import auth from "../firebase.init";
 import Loading from "../Shared/Loading";
-import ResetModal from "../Modal/ResetModal";
 
-const SignIn = () => {
+const SignUp = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-  const [signInWithEmailAndPassword, user, loading, error] =
-    useSignInWithEmailAndPassword(auth);
-  const [modal, setModal] = useState(false);
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
+  const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+  let signInErrorMessage;
+  const navigate = useNavigate();
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
+
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
 
-  let signInErrorMessage;
-  const navigate = useNavigate();
-  const location = useLocation();
-  let from = location.state?.from?.pathname || "/";
-
   useEffect(() => {
     if (user || gUser) {
       navigate(from, { replace: true });
     }
-  }, [user, gUser, from, navigate]);
+  }, [gUser, from, navigate, user]);
 
-  if (loading || gLoading) {
+  if (gLoading || loading || updating) {
     return <Loading />;
   }
-
-  if (error || gError) {
+  if (error || gError || updateError) {
     signInErrorMessage = (
       <p className="text-red-500 mb-2">{error?.message || gError?.message}</p>
     );
   }
 
-  const onSubmit = (data) => {
-    signInWithEmailAndPassword(data.email, data.password);
+  const onSubmit = async (data) => {
+    await createUserWithEmailAndPassword(data.email, data.password);
+    await updateProfile({ displayName: data.name });
   };
   return (
     <div>
@@ -50,12 +50,35 @@ const SignIn = () => {
       <div className="flex min-h-screen justify-center items-center bg-black">
         <div
           data-aos="zoom-in"
-          className="card  max-w-md bg-[#17171A] shadow-xl text-white"
+          className="card  max-w-md bg-[#17171A] text-white shadow-xl"
         >
-          <div className="card-body border-2 rounded-lg">
-            <h2 className="text-center text-3xl">Login</h2>
+          <div className="card-body sm:w-[440px] w-80  border-2 rounded-lg">
+            <h2 className="text-center text-3xl">Sign Up</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
               {/* Email */}
+              <div className="form-control w-full max-w-sm">
+                <label className="label">
+                  <span className="label-text text-white">Name</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="input input-bordered text-black w-full max-w-sm"
+                  {...register("name", {
+                    required: {
+                      value: true,
+                      message: "Name is required",
+                    },
+                  })}
+                />
+                <label className="label">
+                  {errors.name?.type === "required" && (
+                    <span className="label-text-alt text-red-500">
+                      {errors.name.message}
+                    </span>
+                  )}
+                </label>
+              </div>
               <div className="form-control w-full max-w-sm">
                 <label className="label">
                   <span className="label-text text-white">Email</span>
@@ -124,27 +147,11 @@ const SignIn = () => {
               {/*  */}
               {signInErrorMessage}
               <input
-                className="btn btn-primary bg-gradient-to-r hover:bg-gradient-to-br from-orange-700 to-orange-400 duration-1000 text-white w-full max-w-sm"
-                value="login"
+                className="btn btn-primary bg-gradient-to-r from-orange-700 to-orange-500 text-white w-full max-w-sm"
+                value="Sign Up"
                 type="submit"
               />
             </form>
-            <p>
-              New to JobFinder{" "}
-              <Link to="/signUp" className="text-blue-500">
-                Create and Account
-              </Link>{" "}
-            </p>
-            <p>
-              Are you forget your password?{" "}
-              <label
-                onClick={() => setModal(true)}
-                htmlFor="reset-modal"
-                className="text-blue-500"
-              >
-                Reset Password
-              </label>
-            </p>
             <div className="divider">OR</div>
             <button
               onClick={() => signInWithGoogle()}
@@ -155,9 +162,8 @@ const SignIn = () => {
           </div>
         </div>
       </div>
-      {modal && <ResetModal setModal={setModal} />}
     </div>
   );
 };
 
-export default SignIn;
+export default SignUp;

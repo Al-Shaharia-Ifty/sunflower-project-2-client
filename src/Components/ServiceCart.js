@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const ServiceCart = ({ info }) => {
   const { img, name, rating, details, _id } = info;
@@ -7,7 +8,11 @@ const ServiceCart = ({ info }) => {
     <div className="flex justify-center">
       <div className="w-96 ">
         <div>
-          <img src={img} className="w-full h-56 rounded-lg" alt="" />
+          <PhotoProvider>
+            <PhotoView src={img}>
+              <img src={img} className="w-full h-56 rounded-lg" alt="" />
+            </PhotoView>
+          </PhotoProvider>
         </div>
         <div className="text-white mt-5 ">
           <h2 className="text-xl font-semibold">

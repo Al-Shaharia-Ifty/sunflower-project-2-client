@@ -4,6 +4,7 @@ import { router } from "./Routes/routes";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import "react-photo-view/dist/react-photo-view.css";
 
 function App() {
   document.addEventListener("contextmenu", (event) => event.preventDefault());
