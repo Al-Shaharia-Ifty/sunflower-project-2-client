@@ -52,7 +52,7 @@ const Navbar = () => {
             Services
           </NavLink>
           <NavLink
-            to={"/Blogs"}
+            to={"/blogs"}
             className={({ isActive }) =>
               isActive
                 ? "nav text-orange-500"
