@@ -28,8 +28,8 @@ const HomeService = () => {
           </div>
         ))}
       </div>
-      <Link to="/services" className="flex justify-center py-10">
-        <button className="btn bg-[#17171A]">See All Services</button>
+      <Link to="/photos" className="flex justify-center py-10">
+        <button className="btn bg-[#17171A]">See All Photos</button>
       </Link>
     </div>
   );

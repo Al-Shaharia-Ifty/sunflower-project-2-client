@@ -6,7 +6,7 @@ import ServiceDetails from "../Pages/ServiceDetails";
 import Services from "../Pages/Services";
 import SignIn from "../Pages/SignIn";
 import SignUp from "../Pages/SignUp";
-import RequireAuth from "./RequireAuth";
+// import RequireAuth from "./RequireAuth";
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/services",
+        path: "/photos",
         element: <Services />,
       },
       {
@@ -39,11 +39,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/service-details/:id",
-        element: (
-          <RequireAuth>
-            <ServiceDetails />
-          </RequireAuth>
-        ),
+        element: <ServiceDetails />,
       },
     ],
   },

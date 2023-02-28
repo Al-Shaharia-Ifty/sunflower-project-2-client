@@ -50,14 +50,14 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            to={"/services"}
+            to={"/photos"}
             className={({ isActive }) =>
               isActive
                 ? "nav text-orange-500"
                 : "nav hover:text-orange-500 duration-300"
             }
           >
-            Services
+            Photos
           </NavLink>
           <NavLink
             to={"/blogs"}
@@ -138,14 +138,14 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to={"/services"}
+                  to={"/photos"}
                   className={({ isActive }) =>
                     isActive
                       ? "nav text-orange-500 btn btn-ghost"
                       : "nav hover:text-orange-500 duration-300 btn btn-ghost"
                   }
                 >
-                  Services
+                  Photos
                 </NavLink>
               </li>
               <li>
