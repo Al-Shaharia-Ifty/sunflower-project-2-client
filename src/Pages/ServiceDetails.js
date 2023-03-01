@@ -25,7 +25,7 @@ const ServiceDetails = () => {
   return (
     <div>
       <div className="bg-[#17171A] h-[80px]"></div>
-      <div className="lg:flex w-full bg-black">
+      <div className="lg:flex w-full bg-black overflow-hidden">
         {/* photo img */}
         <div className="lg:w-3/5 w-full">
           <img

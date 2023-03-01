@@ -4,8 +4,8 @@ import img from "../Assets/header.jgp.jpg";
 const Heading = () => {
   return (
     <div>
-      <div className="relative lg:h-screen">
-        <img src={img} className="w-full" alt="" />
+      <div className="relative">
+        <img src={img} className="w-full lg:h-screen" alt="" />
         <p
           data-aos="zoom-out"
           data-aos-duration="1000"

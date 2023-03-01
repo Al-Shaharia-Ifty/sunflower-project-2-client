@@ -21,15 +21,24 @@ const HomeService = () => {
   }
   return (
     <div className="bg-[#000000]">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-20 px-10 lg:px-20 2xl:px-60">
+      <h2 className="text-2xl lg:text-4xl text-white text-center pt-20 px-10 lg:px-20">
+        The <span className="text-orange-400">Program</span> We Cover
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-5 px-10 lg:px-20 2xl:px-60">
         {allPhotos.slice(-3).map((p, i) => (
-          <div key={i} className="bg-[#17171A] rounded-lg p-5">
+          <div
+            data-aos="flip-up"
+            data-aos-duration="2000"
+            data-aos-delay="1000"
+            key={i}
+            className="bg-[#17171A] rounded-lg p-5"
+          >
             <ServiceCart info={p} />
           </div>
         ))}
       </div>
-      <Link to="/photos" className="flex justify-center py-10">
-        <button className="btn bg-[#17171A]">See All Photos</button>
+      <Link to="/services" className="flex justify-center py-10">
+        <button className="btn bg-[#17171A]">See All Service</button>
       </Link>
     </div>
   );

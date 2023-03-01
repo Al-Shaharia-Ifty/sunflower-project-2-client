@@ -32,7 +32,7 @@ const ServiceCart = ({ info }) => {
             to={`/service-details/${_id}`}
             className="flex justify-end mt-5"
           >
-            <button className="btn bg-orange-500 hover:text-orange-400">
+            <button className="btn hover:bg-orange-500 hover:text-white text-orange-400">
               View Details
             </button>
           </Link>
