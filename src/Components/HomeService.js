@@ -28,8 +28,8 @@ const HomeService = () => {
         {allPhotos.slice(-3).map((p, i) => (
           <div
             data-aos="flip-up"
-            data-aos-duration="2000"
-            data-aos-delay="1000"
+            data-aos-duration="1000"
+            data-aos-delay="500"
             key={i}
             className="bg-[#17171A] rounded-lg p-5"
           >

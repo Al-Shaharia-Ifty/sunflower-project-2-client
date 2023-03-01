@@ -16,36 +16,36 @@ const Partnership = () => {
         <div className="flex flex-wrap justify-center pb-20 gap-14 pt-10">
           <img
             data-aos="fade-right"
-            data-aos-duration="2000"
-            data-aos-delay="1300"
+            data-aos-duration="1000"
+            data-aos-delay="500"
             src={w1}
             alt=""
           />
           <img
             data-aos="fade-right"
-            data-aos-duration="2000"
-            data-aos-delay="1400"
+            data-aos-duration="1000"
+            data-aos-delay="600"
             src={w2}
             alt=""
           />
           <img
             data-aos="fade-right"
-            data-aos-duration="2000"
-            data-aos-delay="1500"
+            data-aos-duration="1000"
+            data-aos-delay="700"
             src={w3}
             alt=""
           />
           <img
             data-aos="fade-right"
-            data-aos-duration="2000"
-            data-aos-delay="1600"
+            data-aos-duration="1000"
+            data-aos-delay="800"
             src={w4}
             alt=""
           />
           <img
             data-aos="fade-right"
-            data-aos-duration="2000"
-            data-aos-delay="1500"
+            data-aos-duration="1000"
+            data-aos-delay="900"
             src={w5}
             alt=""
           />

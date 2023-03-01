@@ -14,8 +14,8 @@ const MyTeam = () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mx-10 lg:mx-20 pb-20">
           <div
             data-aos="fade-left"
-            data-aos-duration="2000"
-            data-aos-delay="1300"
+            data-aos-duration="1000"
+            data-aos-delay="500"
           >
             <img
               className="rounded-full hover:opacity-75 opacity-100 duration-200"
@@ -31,8 +31,8 @@ const MyTeam = () => {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-duration="2000"
-            data-aos-delay="1400"
+            data-aos-duration="1000"
+            data-aos-delay="600"
           >
             <img
               className="rounded-full hover:opacity-75 opacity-100 duration-200"
@@ -46,8 +46,8 @@ const MyTeam = () => {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-duration="2000"
-            data-aos-delay="1500"
+            data-aos-duration="1000"
+            data-aos-delay="700"
           >
             <img
               className="rounded-full hover:opacity-75 opacity-100 duration-200"
@@ -61,8 +61,8 @@ const MyTeam = () => {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-duration="2000"
-            data-aos-delay="1600"
+            data-aos-duration="1000"
+            data-aos-delay="800"
           >
             <img
               className="rounded-full hover:opacity-75 opacity-100 duration-200"
