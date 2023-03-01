@@ -7,7 +7,7 @@ const Services = () => {
   const { data: allPhotos, isLoading } = useQuery({
     queryKey: ["allPhotos"],
     queryFn: () =>
-      fetch(`http://localhost:5000/photos`, {
+      fetch(`https://novo-server.vercel.app/photos`, {
         method: "GET",
         headers: {
           "content-type": "application/json",

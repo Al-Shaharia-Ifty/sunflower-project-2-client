@@ -5,6 +5,7 @@ import Myself from "../Components/Myself";
 import MyTeam from "../Components/MyTeam";
 import Partnership from "../Components/Partnership";
 import PhotoSection from "../Components/PhotoSection";
+import Support from "../Components/Support";
 import Tips from "../Components/Tips";
 
 const Home = () => {
@@ -15,8 +16,9 @@ const Home = () => {
       <PhotoSection />
       <HomeService />
       <MyTeam />
-      <Partnership />
       <Tips />
+      <Support />
+      <Partnership />
     </div>
   );
 };

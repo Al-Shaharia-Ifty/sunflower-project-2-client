@@ -8,7 +8,7 @@ const ServiceDetails = () => {
   const { data: photoDetails, isLoading } = useQuery({
     queryKey: ["photoDetails"],
     queryFn: () =>
-      fetch(`http://localhost:5000/photo-details/${params.id}`, {
+      fetch(`https://novo-server.vercel.app/photo-details/${params.id}`, {
         method: "GET",
         headers: {
           "content-type": "application/json",
@@ -69,9 +69,7 @@ const ServiceDetails = () => {
         </div>
       </div>
       {/* comment section */}
-      <div>
-        <h2 className="text-2xl">Comments</h2>
-      </div>
+      <div>{/* <h2 className="text-2xl">Comments</h2> */}</div>
     </div>
   );
 };

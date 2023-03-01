@@ -130,7 +130,7 @@ const SignIn = () => {
               />
             </form>
             <p>
-              New to JobFinder{" "}
+              New to Novo{" "}
               <Link to="/signUp" className="text-blue-500">
                 Create and Account
               </Link>{" "}

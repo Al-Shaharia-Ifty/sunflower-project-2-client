@@ -39,6 +39,11 @@ const Tips = () => {
             process and allow you to make corrections that may not be possible
             with a JPEG file.
           </p>
+          <p className="mt-5">
+            Have Fun: Above all else, make sure to have fun with photography.
+            Don't take it too seriously and don't be afraid to make mistakes.
+            The more you shoot, the better you'll get.
+          </p>
         </div>
       </div>
     </div>
