@@ -18,7 +18,7 @@ const MyTeam = () => {
             data-aos-delay="1300"
           >
             <img
-              className="rounded-full opacity-75 hover:opacity-100 duration-100"
+              className="rounded-full hover:opacity-75 opacity-100 duration-200"
               src={m4}
               alt=""
             />
@@ -35,7 +35,7 @@ const MyTeam = () => {
             data-aos-delay="1400"
           >
             <img
-              className="rounded-full opacity-75 hover:opacity-100 duration-100"
+              className="rounded-full hover:opacity-75 opacity-100 duration-200"
               src={m1}
               alt=""
             />
@@ -50,7 +50,7 @@ const MyTeam = () => {
             data-aos-delay="1500"
           >
             <img
-              className="rounded-full opacity-75 hover:opacity-100 duration-100"
+              className="rounded-full hover:opacity-75 opacity-100 duration-200"
               src={m2}
               alt=""
             />
@@ -65,7 +65,7 @@ const MyTeam = () => {
             data-aos-delay="1600"
           >
             <img
-              className="rounded-full opacity-75 hover:opacity-100 duration-100"
+              className="rounded-full hover:opacity-75 opacity-100 duration-200"
               src={m3}
               alt=""
             />
