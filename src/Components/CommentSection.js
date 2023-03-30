@@ -10,7 +10,7 @@ const CommentSection = ({ serviceName }) => {
   } = useQuery({
     queryKey: ["photoComments"],
     queryFn: () =>
-      fetch(`http://localhost:5000/photo-comment/${serviceName}`, {
+      fetch(`https://novo-server.vercel.app/photo-comment/${serviceName}`, {
         method: "GET",
         headers: {
           "content-type": "application/json",

@@ -54,7 +54,7 @@ const ServiceDetails = () => {
       Swal.fire("Sorry", "Please Login first", "error");
       return;
     } else {
-      fetch("http://localhost:5000/photo-comment", {
+      fetch("https://novo-server.vercel.app/photo-comment", {
         method: "POST",
         headers: {
           "content-type": "application/json",

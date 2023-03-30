@@ -13,7 +13,7 @@ const MyComment = () => {
   } = useQuery({
     queryKey: ["myComments"],
     queryFn: () =>
-      fetch(`http://localhost:5000/my-comment/${user?.email}`, {
+      fetch(`https://novo-server.vercel.app/my-comment/${user?.email}`, {
         method: "GET",
         headers: {
           "content-type": "application/json",
