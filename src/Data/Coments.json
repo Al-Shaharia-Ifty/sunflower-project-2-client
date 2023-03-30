@@ -1,9 +1,128 @@
 [
   {
-    "serviceName": "",
-    "comments": "",
-    "img": "",
-    "name": "",
-    "email": ""
+    "serviceName": "Anniversary",
+    "comments": "The service was excellent! The staff was very friendly and helpful, and they went above and beyond to make sure I was taken care of. I'm very pleased with the service I received!",
+    "img": "https://i.ibb.co/8YWQfCB/man.png",
+    "name": "Mubin Munshi",
+    "email": "mubin@gmail.com"
+  },
+  {
+    "serviceName": "Anniversary",
+    "comments": "The service was outstanding! I was very impressed with the professionalism and the attentiveness of the staff. I highly recommend them!",
+    "img": "https://i.ibb.co/Chv3DNc/profile.png",
+    "name": "Jakaria Munshi",
+    "email": "jakaria@gmail.com"
+  },
+  {
+    "serviceName": "Anniversary",
+    "comments": "The service was top-notch! They were timely, efficient, and provided great customer service. I was very satisfied with the results.",
+    "img": "https://i.ibb.co/mycK5xq/young-man.png",
+    "name": "Aayan Munshi",
+    "email": "aayan@gmail.com"
+  },
+  {
+    "serviceName": "Wedding",
+    "comments": "The service was superb! They were very knowledgeable and accommodating. I felt like I was in good hands.",
+    "img": "https://i.ibb.co/8YWQfCB/man.png",
+    "name": "Mubin Munshi",
+    "email": "mubin@gmail.com"
+  },
+  {
+    "serviceName": "Wedding",
+    "comments": "The service was fantastic! They went the extra mile to ensure that I was completely satisfied. I would highly recommend them!",
+    "img": "https://i.ibb.co/Chv3DNc/profile.png",
+    "name": "Jakaria Munshi",
+    "email": "jakaria@gmail.com"
+  },
+  {
+    "serviceName": "Wedding",
+    "comments": "The service was great! They listened to my needs, answered all my questions, and provided excellent advice. I'm very happy with the outcome.",
+    "img": "https://i.ibb.co/mycK5xq/young-man.png",
+    "name": "Aayan Munshi",
+    "email": "aayan@gmail.com"
+  },
+  {
+    "serviceName": "Reception",
+    "comments": "The service was outstanding! They were very professional and courteous. I was very impressed with their level of service.",
+    "img": "https://i.ibb.co/8YWQfCB/man.png",
+    "name": "Mubin Munshi",
+    "email": "mubin@gmail.com"
+  },
+  {
+    "serviceName": "Reception",
+    "comments": "The service was excellent! They were extremely helpful and provided me with great advice. I'm very pleased with the results.",
+    "img": "https://i.ibb.co/Chv3DNc/profile.png",
+    "name": "Jakaria Munshi",
+    "email": "jakaria@gmail.com"
+  },
+  {
+    "serviceName": "Reception",
+    "comments": "The service was amazing! They were very attentive and accommodating. I felt like I was in great hands.",
+    "img": "https://i.ibb.co/mycK5xq/young-man.png",
+    "name": "Aayan Munshi",
+    "email": "aayan@gmail.com"
+  },
+  {
+    "serviceName": "Anniversary",
+    "comments": "The service was first-class! They were very knowledgeable and provided great customer service. I'm very satisfied with the results.",
+    "img": "https://i.ibb.co/8YWQfCB/man.png",
+    "name": "Mubin Munshi",
+    "email": "mubin@gmail.com"
+  },
+  {
+    "serviceName": "Anniversary",
+    "comments": "The service was excellent! They worked quickly and efficiently to meet my needs. I'm very happy with the outcome.",
+    "img": "https://i.ibb.co/Chv3DNc/profile.png",
+    "name": "Jakaria Munshi",
+    "email": "jakaria@gmail.com"
+  },
+  {
+    "serviceName": "Anniversary",
+    "comments": "The service was superb! They were very friendly and helpful and gave me great advice. I would highly recommend them!",
+    "img": "https://i.ibb.co/mycK5xq/young-man.png",
+    "name": "Aayan Munshi",
+    "email": "aayan@gmail.com"
+  },
+  {
+    "serviceName": "Occasional Parties",
+    "comments": "The service was outstanding! They went the extra mile to make sure I was taken care of. I'm very pleased with the service I received!",
+    "img": "https://i.ibb.co/8YWQfCB/man.png",
+    "name": "Mubin Munshi",
+    "email": "mubin@gmail.com"
+  },
+  {
+    "serviceName": "Occasional Parties",
+    "comments": "The service was excellent! They were very professional and knowledgeable. I was very impressed with their level of service.",
+    "img": "https://i.ibb.co/Chv3DNc/profile.png",
+    "name": "Jakaria Munshi",
+    "email": "jakaria@gmail.com"
+  },
+  {
+    "serviceName": "Occasional Parties",
+    "comments": "The service was amazing! They were very responsive and provided me with great advice. I'm very satisfied with the results.",
+    "img": "https://i.ibb.co/mycK5xq/young-man.png",
+    "name": "Aayan Munshi",
+    "email": "aayan@gmail.com"
+  },
+  {
+    "serviceName": "Birthday",
+    "comments": "The service was top-notch! They were very attentive and accommodating. I felt like I was in good hands.",
+    "img": "https://i.ibb.co/8YWQfCB/man.png",
+    "name": "Mubin Munshi",
+    "email": "mubin@gmail.com"
+  },
+  {
+    "serviceName": "Birthday",
+    "comments": "The service was fantastic! They listened to my needs and answered all my questions. I'm very happy with the outcome.",
+    "img": "https://i.ibb.co/Chv3DNc/profile.png",
+    "name": "Jakaria Munshi",
+    "email": "jakaria@gmail.com"
+  },
+  {
+    "serviceName": "Birthday",
+    "comments": "The service was outstanding! They went above and beyond to ensure that I was completely satisfied. I would highly recommend them!",
+    "img": "https://i.ibb.co/mycK5xq/young-man.png",
+    "name": "Aayan Munshi",
+    "email": "aayan@gmail.com"
   }
 ]
